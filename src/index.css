@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Karla", sans-serif;
+  margin: 0; /* pour n plus avoir de marge*/
+}
+
+main{
+  padding: 36px;
+}
+
+header{
+  display: flex; /*pour les rendre sur la meme ligne*/
+  align-items: center; /*au millieu mais sel3ard*/
+  height: 65px;
+  color: white;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  padding: 15px 20px; /*15 top+buttom and 20 left and right*/
+}
+
+.header--image{
+  width: 40px;
+  margin-right: 6px;
+}
+.header--title{
+  font-size: 1.25rem;
+  margin-right: auto; /*so that l'autre composont s'eloigne le max possible*/
+}
+.header--project{
+  font-size: 0.75rem;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr ; /*2 40px rows and 2 coloms 1fr each*/
+  gap: 17px; /*creat a gap between colomns and lines*/
+}
+
+.form--input{
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px; /*leaves 5px to write in the placeholder*/
+}
+
+.form--button{
+  grid-column: 1 / -1; /*will go from the very beginning to the very end*/
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor:pointer; /*so that when we hover over it we understand that we should click on it*/
+  
+}
+
+.meme--image{
+  width: 500px;
+  height: 400px;
+  object-fit: contain; /*cover so that all th imags will have the same hw*/
+  margin: auto;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 5px;
+}
+.meme{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.meme--textTop{
+  position: absolute;
+  top: 0px;
+}
+.meme--textBottom{
+  position: absolute;
+  bottom: 0px;
+}
